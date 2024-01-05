@@ -94,6 +94,10 @@ volumeMounts: []
 #   mountPath: "/etc/foo"
 #   readOnly: true
 
+extraEnvs:
+  - name: "ES_PATH_REPO"
+    value: "/usr/share/elasticsearch/snapshots"
+
 nodeSelector: {}
 
 tolerations: []
